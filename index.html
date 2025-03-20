@@ -32,7 +32,14 @@
             padding-bottom: 8px; 
             margin-bottom: 20px; 
         }
-        h1 { font-size: 2.8rem; }
+        h1 { 
+            font-size: 2.8rem; 
+            text-align: left; 
+            border-bottom: none;
+        }
+        .header-info p {
+            margin: 2px 0; /* reduced gap between title paragraphs */
+        }
         h2 { margin-top: 40px; }
         ul { list-style-type: none; padding-left: 0; }
         ul li { margin-bottom: 10px; line-height: 1.6; }
@@ -62,9 +69,11 @@
 
 <body>
     <div class="container">
-        <h1>Dr. Mohamad Numan</h1>
-        <p>Research Associate - I </p>
-        <p>Indian Association for the Cultivation of Science (IACS) </p>
+        <div class="header-info">
+            <h1>Dr. Mohamad Numan</h1>
+            <p>Research Associate - I </p>
+            <p>Indian Association for the Cultivation of Science (IACS) </p>
+        </div>
 
         <div class="contact">
             <p>Email: <a href="mailto:mohamadnuman000@gmail.com">mohamadnuman000@gmail.com</a></p>
