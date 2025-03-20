@@ -4,98 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Mohamad Numan | CV</title>
+    <title>Dr. Mohamad Numan | Curriculum Vitae</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f7f7f7;
-            color: #333;
-        }
-        header {
-            background: #003366;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        section {
-            max-width: 900px;
-            margin: 20px auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        h1, h2, h3 {
-            margin-top: 0;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        .contact-info p {
-            margin: 5px 0;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            font-size: 0.9em;
-            color: #777;
-        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f4f9; color: #333; margin: 0; padding: 0; }
+        .container { max-width: 900px; margin: 50px auto; background: #fff; padding: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; }
+        h1, h2 { color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+        h1 { font-size: 2.5rem; }
+        h2 { margin-top: 30px; }
+        ul { list-style-type: none; padding-left: 0; }
+        ul li::before { content: "\2022 "; color: #3498db; padding-right: 5px; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .contact p { margin: 5px 0; }
+        .btn-download { display: inline-block; margin-top: 15px; padding: 10px 20px; background: #3498db; color: #fff; text-decoration: none; border-radius: 5px; }
+        .btn-download:hover { background: #2980b9; }
     </style>
 </head>
 
 <body>
-    <header>
+    <div class="container">
         <h1>Dr. Mohamad Numan</h1>
-        <p>Research Associate - I | Indian Association for the Cultivation of Science</p>
-    </header>
+        <p>Research Associate - I, Indian Association for the Cultivation of Science (IACS)</p>
 
-    <section>
+        <div class="contact">
+            <p>Email: <a href="mailto:mohamadnuman000@gmail.com">mohamadnuman000@gmail.com</a></p>
+            <p>Phone: +91 8944991300 / +91 8918326248</p>
+            <p>GitHub: <a href="https://github.com/mo-numan" target="_blank">mo-numan</a></p>
+            <a class="btn-download" href="CV_MN.pdf" target="_blank">Download PDF CV</a>
+        </div>
+
         <h2>Education</h2>
         <ul>
-            <li><strong>Ph.D. in Experimental Physics</strong> - IACS (2019 - Dec 2024)</li>
-            <li><strong>M.Sc. in Physics</strong> - University of Burdwan (2017)</li>
-            <li><strong>B.Sc. in Physics Honours</strong> - Bejoy Narayan Mahavidyalaya (2015)</li>
+            <li>Ph.D. in Experimental Physics (2019 - Dec, 2024), IACS, Jadavpur, Kolkata</li>
+            <li>M.Sc. in Physics (2017), University of Burdwan</li>
+            <li>B.Sc. in Physics Honours (2015), Bejoy Narayan Mahavidyalaya</li>
         </ul>
-    </section>
 
-    <section>
         <h2>Research Interests</h2>
         <ul>
-            <li>Magnetic and Transport Phenomena in Layered Van der Waals Systems</li>
-            <li>Quantum Magnetism</li>
-            <li>Functional Materials for Emerging Applications</li>
+            <li>Quantum Magnetism & Spin Chains</li>
+            <li>Magnetic & Transport Phenomena in Van der Waals Systems</li>
+            <li>Multiferroic and Functional Materials</li>
         </ul>
-    </section>
 
-    <section>
         <h2>Skills</h2>
         <ul>
-            <li>Single Crystal Growth (CVT, flux methods)</li>
-            <li>Magnetic & Transport Measurements (VSM, SQUID, Hall effect, resistivity)</li>
-            <li>Advanced Structural & Spectroscopic Analysis (XRD, XPS, XANES, Raman)</li>
+            <li>Single Crystal Growth, Magnetic & Transport Measurements</li>
+            <li>Advanced Structural & Spectroscopic Techniques (XRD, Raman, XPS, etc.)</li>
             <li>LabVIEW automation, DFT (VASP), Python scripting</li>
         </ul>
-    </section>
 
-    <section>
-        <h2>Publications</h2>
-        <p>See full list on <a href="#">Google Scholar</a> or <a href="#">ORCID</a></p>
-    </section>
+        <h2>Publications (Selected)</h2>
+        <ul>
+            <li>Magnetic Metastability driven Anomalous Hall Effect in FexTaS2, <i>Phys. Rev. B</i> (under review)</li>
+            <li>Suppression of Intrinsic Hall Effect in Cr1+δTe2, <i>Phys. Rev. Materials</i> 9, 024407 (2025)</li>
+            <li>Effect of carrier localization in Co7Zn7Mn6 alloy, <i>Phys. Rev. B</i> 109, 134428 (2024)</li>
+        </ul>
 
-    <section>
-        <h2>Contact</h2>
-        <div class="contact-info">
-            <p>Email: mohamadnuman000@gmail.com</p>
-            <p>Phone: +91 8944991300 / +91 8918326248</p>
-            <p>Office: IACS, Jadavpur, Kolkata, India</p>
-        </div>
-    </section>
+        <h2>Talks & Conferences</h2>
+        <ul>
+            <li>ICMAGMA-2025, Poster Presentation, IISc, Bengaluru</li>
+            <li>RTCMPQM 2024, Oral Presentation, IACS Kolkata</li>
+            <li>Advanced Materials Conference, Goa University (2023)</li>
+        </ul>
 
-    <footer>
-        &copy; 2025 Dr. Mohamad Numan
-    </footer>
+        <h2>Awards & Achievements</h2>
+        <ul>
+            <li>JEST 2018 (AIR 40)</li>
+            <li>CSIR-UGC NET 2017 (AIR 40) & 2018 (AIR 51)</li>
+            <li>GATE 2018 (AIR 833) & 2019 (AIR 139)</li>
+        </ul>
+    </div>
 </body>
 
 </html>
