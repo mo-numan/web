@@ -6,33 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Mohamad Numan | Curriculum Vitae</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f4f9; color: #333; margin: 0; padding: 0; }
-        .container { max-width: 900px; margin: 50px auto; background: #fff; padding: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; }
-        h1, h2 { color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
-        h1 { font-size: 2.5rem; }
-        h2 { margin-top: 30px; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: #f4f4f9; 
+            color: #333; 
+            margin: 0; 
+            padding: 0; 
+        }
+        .container { 
+            max-width: 900px; 
+            margin: 50px auto; 
+            background: #fff; 
+            padding: 40px; 
+            box-shadow: 0 6px 18px rgba(0,0,0,0.1); 
+            border-radius: 12px; 
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1, h2 { 
+            color: #2c3e50; 
+            border-bottom: 2px solid #3498db; 
+            padding-bottom: 8px; 
+            margin-bottom: 20px; 
+        }
+        h1 { font-size: 2.8rem; text-align: center; }
+        h2 { margin-top: 40px; }
         ul { list-style-type: none; padding-left: 0; }
-        ul li::before { content: "\2022 "; color: #3498db; padding-right: 5px; }
+        ul li { margin-bottom: 10px; line-height: 1.6; }
+        ul li::before { content: "• "; color: #3498db; padding-right: 5px; }
         a { color: #3498db; text-decoration: none; }
         a:hover { text-decoration: underline; }
-        .contact p { margin: 5px 0; }
-        .btn-download { display: inline-block; margin-top: 15px; padding: 10px 20px; background: #3498db; color: #fff; text-decoration: none; border-radius: 5px; }
-        .btn-download:hover { background: #2980b9; }
+        .contact p { margin: 6px 0; }
+        .btn-download { 
+            display: inline-block; 
+            margin-top: 20px; 
+            padding: 12px 24px; 
+            background: #3498db; 
+            color: #fff; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            transition: background 0.3s; 
+        }
+        .btn-download:hover { background: #2c80d3; }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
         <h1>Dr. Mohamad Numan</h1>
-        <p>Research Associate - I, Indian Association for the Cultivation of Science (IACS)</p>
+        <p style="text-align: center;">Research Associate - I, Indian Association for the Cultivation of Science (IACS)</p>
 
         <div class="contact">
             <p>Email: <a href="mailto:mohamadnuman000@gmail.com">mohamadnuman000@gmail.com</a></p>
-            <p>Phone: +91 8944991300 </p>
+            <p>Phone: +91 8944991300</p>
             <p>GitHub: <a href="https://github.com/mo-numan" target="_blank">mo-numan</a></p>
             <p>Google Scholar: <a href="https://scholar.google.com/citations?hl=en&user=-hbgb1oAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">View Profile</a></p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/mohamad-numan-82491825a/" target="_blank">View Profile</a></p>
-            <a class="btn-download" href="CV_MN.pdf" target="_blank">Full CV</a>
+            <a class="btn-download" href="CV_MN.pdf" target="_blank">Download Full CV</a>
         </div>
 
         <h2>Education</h2>
@@ -76,6 +115,10 @@
             <li>CSIR-UGC NET 2017 (AIR 40) & 2018 (AIR 51)</li>
             <li>GATE 2018 (AIR 833) & 2019 (AIR 139)</li>
         </ul>
+
+        <footer>
+            &copy; 2025 Dr. Mohamad Numan | All rights reserved
+        </footer>
     </div>
 </body>
 
